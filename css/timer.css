@@ -1,0 +1,73 @@
+.timer {
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/img-fondo.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 40px;
+    padding-top: 35px;
+    margin-bottom: 80px;
+}
+
+.timer>div {
+    display: flex;
+    position: relative;
+    margin: 0vw 1vw;
+}
+
+.timer .cont>div {
+    height: 13.77vw;
+    width: 9vw;
+   
+}
+/* .timer .cont>div {
+    height: 195px;
+    width: 127px;
+   
+} */
+
+.timer .single_cont #img1 {
+    position: relative;
+    /* margin-top: -215px; */
+        width: 9vw;
+    height: 13.77vw;
+    z-index: 2;
+}
+
+.timer .single_cont #img2 {
+    position: relative;
+    margin-top: -195px;
+    z-index: 1;
+}
+
+.timer .single_cont .anim {
+    position: absolute;
+    z-index: 3;
+    width: 9vw;
+    height: 13.77vw;
+}
+
+/* .timer .single_cont .anim {
+    position: relative;
+    z-index: 3;
+    width: 127px;
+    height: 195px;
+} */
+
+.timer .timer-text {
+    position: absolute;
+    bottom: -20px;
+    width: 100% !important;
+    height: 2vw !important;
+    
+}
+
+.timer .timer-text p {
+    
+    width: 100%;
+    height: auto;
+    font-size: 1.5vw;
+    color: white;
+    text-align: center;
+}
