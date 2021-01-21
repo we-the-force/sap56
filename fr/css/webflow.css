@@ -2105,3 +2105,85 @@ a.tel-link:hover {
 #form-response {
     display: none;
 }
+
+#agepopup {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0,0,0,0.7); */
+    
+    align-items: center;
+    justify-content: center;
+}
+
+#agepopup.active {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+#agepopup .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1000;
+}
+
+#agepopup .square {
+    background-color: #000;
+    width: 360px;
+    height: 360px;
+    padding: 20px;
+    background-image: url(/images/popup.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    z-index: 1001;
+}
+
+/* #agepopup .square-cont {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
+#agepopup .square-cont {
+    text-align: center;
+}
+
+#agepopup p {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+#agepopup p.title {
+    font-size: 21px;
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+
+#agepopup a {
+    color: white;
+    font-size: 18px;
+    border: 2px solid #c95618;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#agepopup a.first {
+    margin-right: 20px;
+}
