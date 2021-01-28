@@ -2188,3 +2188,25 @@ a.tel-link:hover {
 #agepopup a.first {
     margin-right: 20px;
 }
+
+.contact-columns {
+    width: 100%;
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: space-between; */
+}
+
+.contact-columns-title {
+    width: 100%;
+}
+
+.contact-columns-title p.title {
+    padding-top: 35px;
+    font-size: 26px;
+    text-align: center;
+}
+
+#product-component-1611769376-616110345439 {
+    max-width: initial !important;
+    margin-bottom: 50px;
+}

@@ -30,9 +30,29 @@
     <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
     <link href="images/webclip.png" rel="apple-touch-icon">
     <link rel="stylesheet" type="text/css" href="css/timer.css">
+    <!-- Google Tag Manager -->
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+
+        })(window,document,'script','dataLayer','GTM-T67ST8B');</script>
+
+        <!-- End Google Tag Manager -->
 </head>
 
-<body class="body">
+<body class="body" id="index-body">
+    <!-- Google Tag Manager (noscript) -->
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T67ST8B"
+
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+        <!-- End Google Tag Manager (noscript) -->
     <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav">
         <div class="div-block-39">
             <a href="./" class="w-nav-brand"><img src="images/56SAP.png" width="223" alt=""></a>
@@ -61,7 +81,7 @@
         <div class="w-container">
             <h1 class="heading-12" style="text-align: center;"><br>SAP56 pairs exquisitely aged Canadian whisky with Grade A maple syrup.</h1>
             <p class="paragraph-2">Over a 56-day period of harvesting and processing maple water, our passionate artisans crafted an incredibly pure maple
-            syrup as part of our special formula. Through masterful distillation and preparation we created a smooth whisky liqueur
+            syrup as part of our special formula. Through masterful distillation and preparation we created a smooth flavored whisky
             with distinct notes of oak and a touch of maple sweetness. Classically crafted and reﬁned for the discerning palate.<br></p>
         </div>
         <div><img src="images/img-1-2.jpg" srcset="images/img-1-2-p-500.jpeg 500w, images/img-1-2-p-800.jpeg 800w, images/img-1-2-p-1080.jpeg 1080w, images/img-1-2-p-1600.jpeg 1600w, images/img-1-2.jpg 1920w" sizes="100vw" alt="" class="image-25"></div>
@@ -176,7 +196,22 @@
                 <div id="form-response">Thank you! Your submission has been received!</div>
             </div>
 
-            <div class="text-block-7">©2020 SAP56 | SAP56 Maple Whisky Liqueur ALL RIGHTS RESERVED. TERMS &amp; PRIVACY</div>
+            <div class="text-block-7">©2021 SAP56 | SAP56 Maple Whisky Liqueur ALL RIGHTS RESERVED. TERMS &amp; PRIVACY</div>
+        </div>
+    </div>
+    <div id="agepopup" class="active">
+        <div class="overlay"></div>
+        <div class="square">
+            <div class="square-cont">
+                <p class="title">Are you of legal drinking age?</p>
+                <a class="button w-button yes first" target="_blank">
+                    Yes
+                </a>
+                <a class="button w-button no" href="http://www.canada.ca/">
+                    No
+                </a>
+                <p>By accessing this site, you acknowledge<br> that you are legally authorized to display<br> the content of the site. </p>
+            </div>
         </div>
     </div>
     <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5e5d7e58e4a0998293f22111" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -218,6 +253,10 @@
                 vid.pause();
                 $("#play").removeClass('playing');
             }
+        });
+        $('#agepopup .yes').on('click', function(ee){
+            ee.preventDefault();
+            $('#agepopup').removeClass('active');
         });
     </script>
 </body>

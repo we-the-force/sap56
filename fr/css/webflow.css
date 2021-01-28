@@ -2108,7 +2108,7 @@ a.tel-link:hover {
 
 #agepopup {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -2125,6 +2125,7 @@ a.tel-link:hover {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    z-index: 10000;
 }
 
 #agepopup .overlay {
@@ -2134,7 +2135,7 @@ a.tel-link:hover {
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.7);
-    z-index: 1000;
+    z-index: 10001;
 }
 
 #agepopup .square {
@@ -2147,7 +2148,7 @@ a.tel-link:hover {
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
-    z-index: 1001;
+    z-index: 10002;
 }
 
 /* #agepopup .square-cont {
@@ -2186,4 +2187,29 @@ a.tel-link:hover {
 }
 #agepopup a.first {
     margin-right: 20px;
+}
+
+.contact-columns {
+    width: 100%;
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: space-between; */
+}
+
+.contact-columns-title {
+    width: 100%;
+}
+
+.contact-columns-title p.title {
+    padding-top: 35px;
+    font-size: 26px;
+    text-align: center;
+}
+
+#index-body {
+    overflow: hidden;
+}
+#product-component-1611769376-6161103454395 {
+    max-width: initial !important;
+    margin-bottom: 50px;
 }
