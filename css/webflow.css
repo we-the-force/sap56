@@ -2210,3 +2210,7 @@ a.tel-link:hover {
     max-width: initial !important;
     margin-bottom: 50px;
 }
+
+#index-body {
+    overflow: hidden;
+}

@@ -6,6 +6,7 @@
 <head>
     <meta charset="utf-8">
     <title>sap56</title>
+    <meta name="facebook-domain-verification" content="dr5ue36jsqmeul5lh5vj1p97m0hvxb" />
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="Webflow" name="generator">
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
@@ -43,6 +44,7 @@
         })(window,document,'script','dataLayer','GTM-T67ST8B');</script>
 
         <!-- End Google Tag Manager -->
+        <!-- Facebook Pixel Code --><script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init', '714169239288079');fbq('track', 'Sap56 + Barcart');</script><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=714169239288079&ev=PageView&noscript=1"/></noscript><!-- End Facebook Pixel Code -->
 </head>
 
 <body class="body" id="index-body">
@@ -72,8 +74,8 @@
     <div>
         <div data-autoplay="true" data-loop="true" data-wf-ignore="true" data-poster-url="videos/SAP56-Ingles-poster-00001.jpg" data-video-urls="videos/SAP56-Ingles-transcode.mp4,videos/SAP56-Ingles-transcode.webm" class="background-video-3 w-background-video w-background-video-atom">
 
-            <video loop="" id="index-video" style="background-image:url(&quot;videos/SAP56-Ingles-poster-00001.jpg&quot;)" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="videos/SAP56-Frances-transcode.mp4" data-wf-ignore="true"><source src="videos/SAP56-Frances-transcode.webm" data-wf-ignore="true"></video>
-            <div id="play" class=""></div>
+            <video loop muted  id="index-video" style="background-image:url(&quot;videos/SAP56-Ingles-poster-00001.jpg&quot;)" playsinline data-wf-ignore="true" data-object-fit="cover"><source src="videos/SAP56-Frances-transcode.mp4" data-wf-ignore="true"><source src="videos/SAP56-Frances-transcode.webm" data-wf-ignore="true"></video>
+            <!-- <div id="play" class=""></div> -->
             <div id="mute-video" class=""></div>
 
         </div>
@@ -259,6 +261,12 @@
         var $mcj = jQuery.noConflict(true);
     </script>
     <script>
+        $(function () {
+            $('#index-video').trigger('play');
+            
+            // $("video").prop('muted', !$("video").prop('muted')));
+
+        });
         var firstScroll = false;
         var vid = document.getElementById("index-video");
         $('#mc-embedded-subscribe').on('click', function() {
@@ -275,19 +283,21 @@
                 $("#mute-video").addClass('mute')
             }
         });
-        $('#play').click(function() {
-            if (vid.paused) {
-                vid.play();
-                $("#play").addClass('playing');
-            } else {
-                vid.pause();
-                $("#play").removeClass('playing');
-            }
-        });
+        // $('#play').click(function() {
+        //     if (vid.paused) {
+        //         vid.play();
+        //         $("#play").addClass('playing');
+        //     } else {
+        //         vid.pause();
+        //         $("#play").removeClass('playing');
+        //     }
+        // });
         $('#agepopup .yes').on('click', function(ee){
             ee.preventDefault();
             $('#agepopup').removeClass('active');
             $('#index-body').css('overflow', 'auto');
+            $('#index-video').prop('muted', false);
+
         });
     </script>
     <script type="text/javascript">
